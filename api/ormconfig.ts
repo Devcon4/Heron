@@ -1,3 +1,4 @@
+// TODO: load creds from .env even though this is only for dev.
 const config = {
     "type": "postgres",
     "host": "localhost",
