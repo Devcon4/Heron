@@ -1,0 +1,11 @@
+{
+    "presets": ["@babel/env"],
+    "plugins": [
+      "babel-plugin-transform-typescript-metadata",
+      "@babel/plugin-proposal-numeric-separator",
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-object-rest-spread",
+      "@babel/plugin-transform-regenerator",
+      ["@babel/plugin-proposal-decorators", {"decoratorsBeforeExport": true}]
+    ],
+  }

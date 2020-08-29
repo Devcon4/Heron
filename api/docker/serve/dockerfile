@@ -1,0 +1,10 @@
+FROM node:latest
+
+EXPOSE 4204
+
+WORKDIR /bindmount
+
+COPY package-lock.json package.json ./
+RUN npm i --no-progress --ignore-optional
+
+CMD npm run serve

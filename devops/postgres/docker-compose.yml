@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres:11.5
+    environment:
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: HeronDev
+      POSTGRES_DB: heron
+    ports:
+      - 4281:5432
+    networks:
+      - dev_default
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 4280:8080
+    networks:
+      - dev_default
+
+networks:
+  dev_default:
